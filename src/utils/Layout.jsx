@@ -14,15 +14,13 @@ const Layout = ({ children }) => {
 
       {/* Main content */}
       <div className="flex-1 flex flex-col">
-
-        {/* Mobile Navbar - Visible only on mobile */}
-        <div className="block md:hidden">
-          <MobileNavbar />
-        </div>
-
         <main className="flex-1 p-4 md:p-6">
           {children}
         </main>
+          {/* Mobile Navbar - Visible only on mobile */}
+        <div className="block md:hidden">
+          <MobileNavbar />
+        </div>
 
       </div>
     </div>
